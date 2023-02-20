@@ -1,0 +1,13 @@
+import random
+
+options = ["rock", "paper", "scissors"]
+
+player = None
+computer = random.choice(options)
+
+player = input("Pick between (rock, paper, and scissors).")
+if player != "rock" and player != "paper" and player != "scissors":
+    print("Oops, that's not a valid choice!")
+
+print(f"Player: {player}")
+print(f"computer: {computer}")
